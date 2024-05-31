@@ -4,9 +4,9 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-tokio = { version = "1.37.0", features = ["full"] }
-warp = { version = "0.3.7", features = ["tls", "tokio-rustls"] }
+bytes = { version = "1.6.0", features = ["serde"] }
 serde = "1.0.203"
 serde_json = "1.0.117"
 serde_derive = "1.0.203"
-bytes = { version = "1.6.0", features = ["serde"] }
+tokio = { version = "1.37.0", features = ["full"] }
+warp = { version = "0.3.7", features = ["tls", "tokio-rustls"] }
