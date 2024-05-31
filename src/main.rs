@@ -21,7 +21,6 @@ async fn main() {
         name: String::from("API Name"),
         des: String::from("API Description"),
     };
-    // let docjson = serde_json::to_string(&api_doc).unwrap();
     
     let root_route = 
     warp::path::end()
@@ -52,4 +51,4 @@ async fn main() {
     warp::serve(routes).run((ip_addr, 8000)).await;
 }
 // Query with
-// curl http://localhost:8000/api/person -d '{"name":"Max", "age": 54}'
+// curl http://localhost:8000/api/person -d '{"name":"Max", "age": 54}' -v
